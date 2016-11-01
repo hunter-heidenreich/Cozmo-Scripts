@@ -15,10 +15,10 @@ def run(sdk_conn):
     # Generic male voice
     robot.say_text(simple_phrase, use_cozmo_voice=False).wait_for_completed()
 
-    # Slow by half
+    # Speed by half
     robot.say_text(simple_phrase, duration_scalar=0.9).wait_for_completed()
 
-    # Speed up by 2
+    # Slow by 2
     robot.say_text(simple_phrase, duration_scalar=3.6).wait_for_completed()
 
     # Modulating the pitch of voice. Plays at {-1, 0, 1}
